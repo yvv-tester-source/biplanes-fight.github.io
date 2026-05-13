@@ -1,131 +1,189 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f6f7fb;
+      margin: 0;
+      padding: 0;
+      color: #1c1c1e;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 36px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #3a3a3c;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #3a3a3c;
+      line-height: 1.6;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .email {
+      margin-top: 10px;
+      padding: 14px;
+      background: #f2f2f7;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    a {
+      color: #007aff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-top: 10px;
+    }
+
+    .divider {
+      margin: 24px 0;
+      border: none;
+      border-top: 1px solid #e5e5ea;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #8e8e93;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 16px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <pre>
-PRIVACY POLICY
-Biplanes Fight
+  <div class="container">
 
-─────────────────────────────────────────────
+    <h1>Privacy Policy</h1>
+    <p class="small">Biplanes Fight</p>
 
-1. OVERVIEW
+    <hr class="divider">
 
-Biplanes Fight ("the App") is a biplane combat game developed as an independent
-project. This Privacy Policy explains what information is collected, how it is
-used, and your rights regarding that information.
+    <h2>1. Overview</h2>
+    <p>
+      Biplanes Fight ("the App") is a biplane combat game developed as an independent project.
+      This Privacy Policy explains what information is collected, how it is used, and your rights regarding that information.
+    </p>
 
-We are committed to protecting your privacy. The App does not collect data
-and never sells or shares personal information with third
-parties for advertising or marketing purposes.
+    <p>
+      We are committed to protecting your privacy. The App does not collect data and never sells or shares personal information with third parties for advertising or marketing purposes.
+    </p>
 
-─────────────────────────────────────────────
+    <h2>2. Information We Collect</h2>
 
-2. INFORMATION WE COLLECT
+    <h2 class="section">2.1 Stored Locally on Your Device</h2>
+    <p>The App stores the following data exclusively on your device:</p>
+    <ul>
+      <li><b>Player progress</b> – Level and XP stored in UserDefaults and protected by iOS Keychain.</li>
+      <li><b>Game preferences</b> – Used to trigger App Store review prompts.</li>
+    </ul>
 
-2.1 Information Stored Locally on Your Device
+    <p>This data never leaves your device during offline play.</p>
 
-The App stores the following data exclusively on your device:
+    <h2 class="section">2.2 Online Play Data</h2>
+    <p>When using “Play Online”, the following data is transmitted to our server:</p>
+    <ul>
+      <li>Current player level (non-identifying integer)</li>
+      <li>Gameplay state updates (positions, actions)</li>
+    </ul>
 
-• Player progress – Your current level and XP points are saved in the app's
-  local storage (UserDefaults) and protected with a device-bound cryptographic
-  key stored in the iOS Keychain. This data never leaves your device during
-  offline (bot) play.
+    <p>No personally identifiable information is intentionally collected or stored.</p>
 
-• Game preferences – The number of completed fights is stored locally to
-  determine when to prompt you for an App Store review.
+    <h2 class="section">2.3 Contact Email</h2>
+    <p>
+      If you contact us via email, your message is handled by your email provider’s privacy policy.
+      We use emails only to respond to support requests.
+    </p>
 
-This locally stored data is never transmitted to our servers or to any third
-party.
+    <div class="email">
+      📧 <a href="mailto:biplanes.fight@gmail.com">biplanes.fight@gmail.com</a>
+    </div>
 
-2.2 Information Transmitted During Online Play
+    <h2>3. Information We Do Not Collect</h2>
+    <ul>
+      <li>Name, email, or account credentials</li>
+      <li>Device identifiers (IDFA, IDFV)</li>
+      <li>Location data</li>
+      <li>Analytics or advertising data</li>
+      <li>Cookies or tracking technologies</li>
+    </ul>
 
-When you use the "Play Online" feature, the following technical data is sent to
-our game server to facilitate matchmaking and real-time gameplay:
+    <h2>4. App Store Review Requests</h2>
+    <p>
+      Review prompts are handled by Apple’s SKStoreReviewController API.
+      No data is sent to us.
+    </p>
 
-• Your current player level (an integer, not linked to any personal identity).
-• In-game state updates (positions, actions) required to synchronise gameplay
-  between two players.
+    <h2>5. Children’s Privacy</h2>
+    <p>
+      The App does not knowingly collect personal data from children under 13.
+    </p>
 
-No personally identifiable information (name, email, device identifiers, IP
-geolocation, etc.) is collected or stored by the server beyond what is strictly
-required for the current game session.
+    <h2>6. Data Security</h2>
+    <p>
+      Local data is protected using iOS Keychain security mechanisms.
+    </p>
 
-2.3 Contact Email
+    <h2>7. Data Retention and Deletion</h2>
+    <p>
+      All data is stored locally and can be deleted by uninstalling the App.
+    </p>
 
-If you choose to contact us via the in-app "Contact" button, your email client
-will open a pre-addressed message to biplanes.fight@gmail.com. Any information
-you include in that email is voluntarily provided by you and is governed by your
-email provider's privacy policy. We use email replies solely to respond to your
-inquiry.
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      This policy may be updated in future app releases.
+    </p>
 
-─────────────────────────────────────────────
+    <h2>9. Contact</h2>
+    <p>
+      For questions, contact:
+    </p>
 
-3. INFORMATION WE DO NOT COLLECT
+    <div class="email">
+      📧 <a href="mailto:biplanes.fight@gmail.com">biplanes.fight@gmail.com</a>
+    </div>
 
-• We do not collect your name, email address, or any account credentials.
-• We do not collect device identifiers (IDFA, IDFV, or similar).
-• We do not collect location data.
-• We do not integrate any third-party analytics, advertising, or crash-
-  reporting SDKs.
-• We do not use cookies or web tracking technologies.
-• We do not share any data with third parties.
-
-─────────────────────────────────────────────
-
-4. APP STORE REVIEW REQUESTS
-
-The App may ask you to rate it on the App Store after certain gameplay
-milestones. This is handled entirely by Apple's SKStoreReviewController API.
-No data is transmitted to us as a result of this prompt; Apple manages the
-review process independently.
-
-─────────────────────────────────────────────
-
-5. CHILDREN'S PRIVACY
-
-The App does not knowingly collect personal information from children under
-the age of 13 (or the applicable age of digital consent in your jurisdiction).
-Because we collect no personal information at all, the App is safe for users
-of all ages in this regard.
-
-─────────────────────────────────────────────
-
-6. DATA SECURITY
-
-Locally stored progress data is protected by iOS-native security mechanisms:
-a cryptographic HMAC secret is stored in the iOS Keychain with the
-kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly policy, meaning it cannot be
-accessed by other apps or transferred to another device.
-
-─────────────────────────────────────────────
-
-7. DATA RETENTION AND DELETION
-
-All data stored by the App resides on your device. You can delete it at any
-time by uninstalling the App, which removes all locally stored data including
-UserDefaults entries and Keychain items associated with the App.
-
-─────────────────────────────────────────────
-
-8. CHANGES TO THIS POLICY
-
-We may update this Privacy Policy from time to time. Any changes will be
-reflected in an updated version distributed with a new App release. We
-encourage you to review this policy periodically.
-
-─────────────────────────────────────────────
-
-9. CONTACT US
-
-If you have questions, please contact us at:
-
-  biplanes.fight@gmail.com
-
-─────────────────────────────────────────────
-  </pre>
+  </div>
 </body>
 </html>
